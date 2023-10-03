@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="estilos/style_media.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <title>Contato</title>
+</head>
+<body onresize="mudouTamanho()">
+        
+    <header>
+        <i id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
+        <nav id="itens">
+            <ul class="menu">
+                <li><a href="index.html">Sobre mim</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="contato.html" class="menu_active">Contato</a></li>
+            </ul>
+        </nav id="itens">
+    </header>
+
+    <main>
+        <section class="formulario">
+            <form action="" autocomplete="off">
+                <fieldset>
+                    <legend>Formulário de Contato</legend>
+                    <label for="Nome completo">Nome</label>
+                    <input type="text" id="name" name="name" required="Digite seu nome completo">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" required placeholder="Digite um email válido">           
+                    <label for="message">Mensagem</label>
+                    <textarea name="message" id="message" rows="8" required maxlength="1000" minlength="20"></textarea>
+                    <button type="submit" class="btn">Enviar</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+          if (itens.style.display =='block') {
+            itens.style.display = 'none'
+          } else {
+            itens.style.display = 'block'
+          }
+        }
+
+    </script>
+    <footer>
+        <p class="autoria">Criado por Andreza Matsuoka</p>
+        <div class="referencias">
+            <p>Site inspirado nas aulas do professor Daniel Tapias Morales</p>
+            <p>Ícones utilizados de<a href=""> <img src="https://icons8.com/icons" alt="">Icons8</a></p>
+            
+        </div>
+        
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+@media screen and (min-width: 768px) {
+
+    body {
+        width: 90%;
+        margin: auto;
+       
+    }
+     
+    #burguer {
+        display: none;
+    }
+
+    nav { 
+        display: block;
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    header {
+        margin-bottom: 30px;
+    }
+
+    .home {
+        width: 80vw;
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        gap: 30px;
+    }
+
+    .nome, .objetivo{
+        text-align: left;
+    }
+
+    .home_foto {
+        width: 30vw;
+        margin: auto;
+    }
+
+    .icons {
+        margin-top: 20px;
+    }
+
+    .projects {
+        width: 90%;
+        margin: auto;
+    }
+
+    .projects_projetos {
+       display: flex;
+       flex-direction: row-reverse;
+        
+    }
+   
+    form {
+        width: 50%;
+        min-width: 15em;
+        max-width: 20em;
+        
+        border-radius: 6px;
+        box-shadow: 0 5px 12px #000;
+        
+        
+    }
+
+    footer {
+        width: 95%;
+        align-items: center;
+        margin-left: 2%;
+    }
+    
+    .referencias {
+        flex-wrap: wrap;
+    }
+    
+    .referencias a {
+        padding-top: 15px;
+    }
+}
